@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starterv0",
+	"appName": "coin-flip-tracker",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
