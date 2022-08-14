@@ -1,13 +1,17 @@
 section {
-  padding: 1rem;
+  padding: .5rem 1rem;
   position: fixed;
-  bottom: 30px;
-  left: 0;
+  bottom: 0px;
+  right: 0;
   width: 100%;
-  font-size: .8rem;
+  font-size: 1rem;
   // background-color: rgba(0, 0, 0, .5);
 }
 
+.streak-row ion-grid ion-col{
+  z-index: 2;
+  background-color: black;
+}
 
 ul {
   padding-left: .6rem;
@@ -40,19 +44,23 @@ ul {
     padding: 0 5px;
     font-size: 16px;
     font-weight: 600;
+    z-index: 2;
   }
 
+  .title span {
+    background-color: black;
+  }
 
   .default{
     border: 4px solid #d0d0d0;
     margin-top: -1px;
 
     ion-col {
-      font-size: 15px;
+      font-size: 24px;
       font-weight: 500;
       color: white;
       text-align: center;
-      min-height: 25px;
+      min-height: 38px;
   
       &:not(:last-child) {
         border-right: 4px solid #d0d0d0;
@@ -68,11 +76,11 @@ ul {
     margin-top: -1px;
 
     ion-col {
-      font-size: 15px;
+      font-size: 24px;
       font-weight: 500;
       color: white;
       text-align: center;
-      min-height: 25px;
+      min-height: 38px;
   
       &:not(:last-child) {
         border-right: 4px solid rgba(235, 68, 90, 0.6);
@@ -85,11 +93,11 @@ ul {
     border: 4px solid rgb(56, 128, 255, 0.6);
 
     ion-col {
-      font-size: 15px;
+      font-size: 24px;
       font-weight: 500;
       color: white;
       text-align: center;
-      min-height: 25px;
+      min-height: 38px;
   
       &:not(:last-child) {
         border-right: 4px solid rgb(56, 128, 255, 0.6);
@@ -102,11 +110,11 @@ ul {
     border: 4px solid green;
 
     ion-col {
-      font-size: 15px;
+      font-size: 24px;
       font-weight: 500;
       color: white;
       text-align: center;
-      min-height: 25px;
+      min-height: 38px;
   
       &:not(:last-child) {
         border-right: 4px solid green;
@@ -119,11 +127,11 @@ ul {
     border: 4px solid yellow;
 
     ion-col {
-      font-size: 15px;
+      font-size: 24px;
       font-weight: 500;
       color: white;
       text-align: center;
-      min-height: 25px;
+      min-height: 38px;
   
       &:not(:last-child) {
         border-right: 4px solid yellow;
@@ -136,11 +144,11 @@ ul {
     border: 4px solid orange;
 
     ion-col {
-      font-size: 15px;
+      font-size: 24px;
       font-weight: 500;
       color: white;
       text-align: center;
-      min-height: 25px;
+      min-height: 38px;
   
       &:not(:last-child) {
         border-right: 4px solid orange;

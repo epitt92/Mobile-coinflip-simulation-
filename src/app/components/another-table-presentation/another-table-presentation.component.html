@@ -1,6 +1,6 @@
 <div>
 <ion-grid id="scrollable_grid" style="overflow-x: auto;height: auto;" *ngIf="statsHandler.dummyArr.length>9">
-  <ion-row style="width: max-content;">
+  <ion-row style="width: 100%;">
     <ion-col>
       70
     </ion-col>
@@ -9,7 +9,7 @@
     {{square.statsIndex || square.elm}}
     </ion-col>
   </ion-row>
-  <ion-row style="width: max-content;">
+  <ion-row style="width: 100%;">
     <ion-col>
       60
     </ion-col>
@@ -18,7 +18,7 @@
     {{square.statsIndex || square.elm}}
     </ion-col>
   </ion-row>
-  <ion-row style="width: max-content;">
+  <ion-row style="width: 100%;">
     <ion-col>
       50
     </ion-col>
@@ -30,7 +30,7 @@
 </ion-grid>
 
 <ion-grid id="scrollable_grid" style="overflow-x: auto;height: auto;" *ngIf="statsHandler.oddEvenArr.length>9">
-  <ion-row style="width: max-content;">
+  <ion-row style="width: 100%;">
     <ion-col>
       70
     </ion-col>
@@ -39,7 +39,7 @@
     {{square.elm===0?'E':'O'}}
     </ion-col>
   </ion-row>
-  <ion-row style="width: max-content;">
+  <ion-row style="width: 100%;">
     <ion-col>
       60
     </ion-col>
@@ -48,7 +48,7 @@
     {{square.elm===0?'E':'O'}}
     </ion-col>
   </ion-row>
-  <ion-row style="width: max-content;">
+  <ion-row style="width: 100%;">
     <ion-col>
       50
     </ion-col>

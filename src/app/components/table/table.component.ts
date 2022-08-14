@@ -18,6 +18,8 @@ export class TableComponent {
   currentType: string;
   number_array = [];
   maxJvalue = null;
+  oddEvenPlainArr = []
+
   @ViewChildren("anchor") anchorList: QueryList<ElementRef>;
   p=localStorage.getItem("p")
   b=localStorage.getItem("b")
@@ -28,13 +30,15 @@ export class TableComponent {
     public statsService: StatsService,
     private renderer: Renderer2
   ) {
-    
+
     this.statsService.oddOrEvenObservable.subscribe((val) => {
+      this.oddEvenPlainArr = []
+      this.tableService.tblOddEvenData.forEach((arr: any[]) => {
+        arr.forEach((element) => {
+          this.oddEvenPlainArr.push(element);
+        });
+      });
       if (val) {
-        console.log(this.p)
-        console.log(this.b)
-        console.log(this.p_c)
-        console.log(this.b_c)
         if (this.statsService.currentColNumber >= 0) {
           if (this.statsService.oddOrEvenArr.length > 0) {
             this.statsService.oddOrEvenArr[this.statsService.currentColNumber] =

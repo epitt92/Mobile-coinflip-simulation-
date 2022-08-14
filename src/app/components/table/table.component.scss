@@ -6,6 +6,17 @@
   border: 1px solid gray;
   margin: 0;
 }
+.odd-even-item .head{
+  background-color: black;
+  border: 0px;
+  color: var(--ion-color-primary);
+}
+.odd-even-item .tail{
+  border: 0px;
+  background-color: black;  
+  color: var(--ion-color-danger);
+}
+
 .head {
   background-color: var(--ion-color-primary);
 }

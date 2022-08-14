@@ -82,6 +82,12 @@ export class HomePage implements OnInit {
 
     this.tableservice.blinktextflagP=false;
     this.tableservice.blinktextflagB=false;
+
+    clearInterval(this.tableservice.odd);
+    clearInterval(this.tableservice.even);
+
+    this.tableservice.blinktextflagO=false;
+    this.tableservice.blinktextflagE=false;
     this.statsHandler.tableService.deleteLastInput();
 
     this.statsHandler.tableService.tableDataObservable.next(this.statsHandler.tableService.tableData);

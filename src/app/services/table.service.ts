@@ -118,6 +118,18 @@ export class TableService {
     if (this.tableData.length > 0) {
       if (this.tableData[this.statsService.currentColNumber].length === 1) {
         this.tableData.pop();
+
+        // Remove the Odd&Even
+        if (this.tblOddEvenData.length > 0) {
+          if (this.tblOddEvenData[this.statsService.currentOEColNumber].length === 1) {
+            this.tblOddEvenData.pop();
+            this.statsService.currentOEColNumber--;
+
+          } else {
+            this.tblOddEvenData[this.statsService.currentOEColNumber].pop();
+          }
+        }
+
         this.statsService.currentColNumber--;
 
         this.statsService.oddOrEvenArr.pop();

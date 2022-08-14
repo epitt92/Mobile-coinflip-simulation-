@@ -61,6 +61,14 @@ export class StatsPresentationCalculationService {
         });
         this.populatingPresentation();
         this.classifyOddEvenArray(this.oddEvenArr)
+        this.statsService.presentation[70] = this.statsService.presentation[70].slice(-10);
+        this.statsService.presentation[60] = this.statsService.presentation[60].slice(-10);
+        this.statsService.presentation[50] = this.statsService.presentation[50].slice(-10);
+
+        this.statsService.oddEven[70] = this.statsService.oddEven[70].slice(-10);
+        this.statsService.oddEven[60] = this.statsService.oddEven[60].slice(-10);
+        this.statsService.oddEven[50] = this.statsService.oddEven[50].slice(-10);
+
       }
     });
   }
