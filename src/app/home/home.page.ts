@@ -61,7 +61,6 @@ export class HomePage implements OnInit {
 
    
 
-    
     if (
       type === this.statsHandler.statsService.currentType &&
       this.statsHandler.tableService.tableData.length > 0

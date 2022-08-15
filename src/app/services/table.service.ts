@@ -34,7 +34,6 @@ export class TableService {
       this.tblOddEvenData.push([this.statsService.currentOEType]);
       this.statsService.currentOEColNumber = 0;
     }
-    console.log("oearr:", this.tblOddEvenData)
   }
   
   addOENewRow() {
@@ -124,7 +123,7 @@ export class TableService {
           if (this.tblOddEvenData[this.statsService.currentOEColNumber].length === 1) {
             this.tblOddEvenData.pop();
             this.statsService.currentOEColNumber--;
-
+            this.statsService.currentOEType = 1 - this.statsService.currentOEType;
           } else {
             this.tblOddEvenData[this.statsService.currentOEColNumber].pop();
           }
